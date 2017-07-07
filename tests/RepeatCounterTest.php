@@ -6,17 +6,18 @@
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
 
-        function repeatCounterMachine()
+        function testRepeatCounterMachine()
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $input = "a";
+            $input1 = "a";
+            $input2= "";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input);
+            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
 
             //Assert
-            $this->assertEquals("1", $result);
+            $this->assertEquals(1, $result);
         }
     }
 
