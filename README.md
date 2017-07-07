@@ -1,6 +1,6 @@
-1. Behavior: User inputs a single letter. The program returns the number of times the letter is inputted.   
+1. Behavior: User types a single letter into both input fields. The program compares the two and returns the number of times the letters match.   
 Input1: "a"
-Input2: ""
+Input2: "a"
 Output: 1
 
 2.Behavior: User inputs a single letter and a string of letters. The program returns the number of times the single letter matches the letter string.
@@ -8,9 +8,9 @@ Input1: "k"
 Input2: "k, l, m"
 Output: 1
 
-3.Behavior: User inputs a word. The program returns the number of times the word is inputted.
+3.Behavior: User inputs a word into both input fields. The program returns the number of times the word matches input field one to two.
 Input1: "think"
-Input2: ""
+Input2: "think"
 Output: 1
 
 4. Behavior: User inputs a word and a list of words. The program returns the number of times the word is inputted.
