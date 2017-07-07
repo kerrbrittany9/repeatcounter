@@ -2,7 +2,7 @@
 
     class RepeatCounter
     {
-        
+
         function repeatCounterMachineValidate($input1, $input2)
         {
 
