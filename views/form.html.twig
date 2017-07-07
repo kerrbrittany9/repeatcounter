@@ -2,23 +2,26 @@
 <html>
   <head>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='/css/styles.css' type='text/css'>
     <title>word matches</title>
   </head>
   <body>
     <div class='container'>
-      <h1>Count Repeats</h1>
-      <p>Enter a word in the first field. Enter a sentence or list without punctuation in the second. Then find out how many times you repeat the word entered in the first field in the second</p>
-      <form action='/score'>
-        <div class='form-group'>
-          <label for='input1'>Word:</label>
-          <input id='input1' name='input1' class='form-control' type='text' required>
-        </div>
-        <div class='form-group'>
-          <label for='input2'>Sentence:</label>
-          <input id='input2' name='input2' class='form-control' type='text' required>
-        </div>
-        <button type='submit' class='btn-success'>Count it</button>
-      </form>
+      <div class='well'>
+        <h1>Count Repeats</h1>
+        <p>Enter a word in the first field. Enter a sentence or list without punctuation in the second. Then find out how many times you repeat the word entered in the first field in the second</p>
+        <form action='/score'>
+          <div class='form-group'>
+            <label for='input1'>One Word:</label>
+            <input id='input1' name='input1' class='form-control' type='text' required>
+          </div>
+          <div class='form-group'>
+            <label for='input2'>Sentence:</label>
+            <input id='input2' name='input2' class='form-control' type='text' required>
+          </div>
+          <button type='submit' class='btn-success'>Count it</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
