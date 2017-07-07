@@ -22,3 +22,8 @@ Output: 2
 Input1: "people"
 Input2: "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel"
 Output: 3
+
+6.Behavior: User input a sentence and word. The program returns the number of times the full word matches regardless of case.
+Input1: "Over"
+Input2: "Red rover, red rover will Sally come over here."
+Output: 1

@@ -72,7 +72,20 @@
             $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
 
             //Assert
-            $this->assertEquals(2, $result);
+            $this->assertEquals(3, $result);
+        }
+        function testRepeatCounterMachineValidate()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "Over";
+            $input2 = "Red rover, red rover will Sally come over here.";
+
+            //Act
+            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+
+            //Assert
+            $this->assertEquals(1, $result);
         }
 
     }
