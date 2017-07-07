@@ -33,6 +33,21 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function testRepeatCounterMachineWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "think";
+            $input2= "think";
+
+            //Act
+            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 
 ?>
