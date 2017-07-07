@@ -53,7 +53,20 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "red";
-            $input2 = "blue, red, pink, red";
+            $input2 = "blue, red, pink, edr, ed, red";
+
+            //Act
+            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+        function testRepeatCounterMachineSentence()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "people";
+            $input2 = "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel";
 
             //Act
             $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
