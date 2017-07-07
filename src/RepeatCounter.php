@@ -6,5 +6,6 @@
         {
             return substr_count($input1, $input2);
         }
+        
     }
 ?>
