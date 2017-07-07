@@ -3,7 +3,7 @@
     class RepeatCounter
     {
 
-        function repeatCounterMachineValidate($input1, $input2)
+        function countRepeats($input1, $input2)
         {
 
             $result_array = [];
@@ -14,11 +14,8 @@
             foreach ($input2_word_array as $key => $value)
             {
                 if ($value == $input1_lower) {
-                    // var_dump($input1_lower);
                     array_push($result_array, $this->value);
                 }
-
-
             }
             $final_count = count($result_array);
             return $final_count;
