@@ -39,13 +39,27 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "think";
-            $input2= "think";
+            $input2 = "think";
 
             //Act
             $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
+        }
+
+        function testRepeatCounterMachineWordList()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "red";
+            $input2 = "blue, red, pink, red";
+
+            //Act
+            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
         }
 
     }
