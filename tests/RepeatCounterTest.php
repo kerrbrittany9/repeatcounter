@@ -11,7 +11,7 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "a";
-            $input2= "";
+            $input2= "a";
 
             //Act
             $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
