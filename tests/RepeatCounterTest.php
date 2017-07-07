@@ -14,7 +14,7 @@
             $input2= "a";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
@@ -25,10 +25,10 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "k";
-            $input2= "k, l, m";
+            $input2= "k l m";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
@@ -42,7 +42,7 @@
             $input2 = "think";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
@@ -53,10 +53,10 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "red";
-            $input2 = "blue, red, pink, edr, ed, red";
+            $input2 = "blue red pink edr ed red";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(2, $result);
@@ -69,7 +69,7 @@
             $input2 = "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(3, $result);
@@ -82,7 +82,7 @@
             $input2 = "Red rover, red rover will Sally come over here.";
 
             //Act
-            $result = $test_RepeatCounter->repeatCounterMachine($input1, $input2);
+            $result = $test_RepeatCounter->repeatCounterMachineValidate($input1, $input2);
 
             //Assert
             $this->assertEquals(1, $result);
