@@ -19,10 +19,10 @@
         return $app['twig']->render('form.html.twig');
     });
 
-    $app->get("/score", function() use ($app) {
+    $app->post("/score", function() use ($app) {
     $my_repeat_counter = new RepeatCounter;
-    $final_counter_score = $my_repeat_counter->countRepeats($_GET['input1'], $_GET['input2']);
-    return $app['twig']->render('score.html.twig', array('score' => $final_counter_score, 'string' => $_GET['input2']));
+    $final_counter_score = $my_repeat_counter->countRepeats($_POST['input1'], $_POST['formLyrics']);
+    return $app['twig']->render('score.html.twig', array('score' => $final_counter_score);
     });
 
     return $app;

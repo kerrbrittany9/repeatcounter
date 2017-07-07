@@ -10,14 +10,19 @@
       <div class='well'>
         <h1>Count Repeats</h1>
         <p>Enter a word in the first field. Enter a sentence or list without punctuation in the second. Then find out how many times you repeat the word entered in the first field in the second</p>
-        <form action='/score'>
+        <form action='/score' method='post'>
           <div class='form-group'>
             <label for='input1'>One Word:</label>
             <input id='input1' name='input1' class='form-control' type='text' required>
           </div>
           <div class='form-group'>
-            <label for='input2'>Sentence:</label>
-            <input id='input2' name='input2' class='form-control' type='text' required>
+            <p>Not so awesome lyrics
+            <select name="formLyrics">
+              <option value="redman">You remind me of school on a Sunday No class</option>
+              <option value="dre">I kick plenty of ass so call me an astronaut.</option>
+              <option value="eminem">Now you get to watch her leave out the window Guess that's why they call it window pane</option>
+            </select>
+            </p>
           </div>
           <button type='submit' class='btn-success'>Count it</button>
         </form>
